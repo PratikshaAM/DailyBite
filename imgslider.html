@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .slider{
+            width: 70%;
+            height: 100vh;
+            background-image: url(WEB.png);
+            background-size: 100% 100%;
+            animation: slider 2s linear infinite; 
+            background-position: center;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            background-color: #f2a20e;
+        }
+        @keyframes slider{
+            0%{
+                background-image: url(WEB.png);
+            }
+            50%{
+                background-image: url(WEB-2.png);
+            }
+            100%{
+                background-image: url(WEB-3.png);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider"></div>
+</body>
+</html>
